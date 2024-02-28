@@ -649,16 +649,6 @@ video {
   margin-right: 1rem;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -706,10 +696,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.h-\[32rem\] {
-  height: 32rem;
 }
 
 .h-\[4px\] {
@@ -784,10 +770,6 @@ video {
 
 .grid-flow-col {
   grid-auto-flow: column;
-}
-
-.grid-flow-col-dense {
-  grid-auto-flow: column dense;
 }
 
 .grid-cols-1 {
@@ -1293,12 +1275,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:scale-105:hover {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1345,17 +1321,27 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@media not all and (min-width: 1024px) {
+  .max-lg\:hidden {
+    display: none;
+  }
+
+  .max-lg\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
+  .max-lg\:pt-9 {
+    padding-top: 2.25rem;
+  }
+}
+
 @media (min-width: 640px) {
-  .sm\:grid-flow-col {
-    grid-auto-flow: column;
-  }
-
-  .sm\:grid-cols-none {
-    grid-template-columns: none;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
@@ -1364,16 +1350,16 @@ video {
     grid-auto-flow: column;
   }
 
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-none {
     grid-template-columns: none;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
@@ -1382,16 +1368,16 @@ video {
     grid-auto-flow: column;
   }
 
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-none {
     grid-template-columns: none;
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
